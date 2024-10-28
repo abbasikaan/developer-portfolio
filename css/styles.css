@@ -104,3 +104,25 @@ h3 {
     letter-spacing: -1.5px;
   }
 }
+
+/************\
+#Links
+\************/
+
+a {
+  text-decoration: none;
+}
+
+.link-underline {
+  color: var(--color-headings);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  letter-spacing: 2.29px;
+  transition: color .3s;
+}
+
+.link-underline:hover {
+  color: var(--color-accent);
+}
