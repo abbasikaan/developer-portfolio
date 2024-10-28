@@ -1,0 +1,9 @@
+@import './normalize.css';
+
+:root {
+  --color-primary: #151515;
+  --color-secondary: #242424;
+  --color-accent: #4ee1a0;
+  --color-headings: #ffffff;
+  --color-body: #d9d9d9;
+}
