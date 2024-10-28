@@ -25,6 +25,12 @@
   --color-body: #d9d9d9;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 /************\
 #Typography
 \************/
@@ -85,6 +91,12 @@ h3 {
     line-height: 5.6rem;
   }
 
+  h2 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.5px;
+  }
+
   h3 {
     font-size: 2.4rem;
     line-height: 3.2rem;
@@ -98,11 +110,6 @@ h3 {
     line-height: 8.8rem;
   }
 
-  h2 {
-    font-size: 4.8rem;
-    line-height: 5.6rem;
-    letter-spacing: -1.5px;
-  }
 }
 
 /************\
@@ -144,4 +151,33 @@ a {
 
 .underline-xl {
   height: 6px;
+}
+
+/************\
+#Skill
+\************/
+
+.skill {
+  text-align: center;
+}
+
+.skill__heading,
+.skill p {
+  margin: 0;
+}
+
+.skill p {
+  margin-top: 1px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .skill {
+    text-align: start;
+  }
+
+  .skill__heading {
+    margin-bottom: 14px;
+  }
 }
