@@ -126,3 +126,22 @@ a {
 .link-underline:hover {
   color: var(--color-accent);
 }
+
+/************\
+#Underline
+\************/
+
+.underline {
+  /* width should be auto */
+  width: auto;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.underline-large {
+  height: 4px;
+}
+
+.underline-xl {
+  height: 6px;
+}
