@@ -1,4 +1,21 @@
+/************\
+#CSS Reset
+\************/
+
 @import './normalize.css';
+
+/************\
+#Fonts
+\************/
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/************\
+#Color Pallet
+\************/
 
 :root {
   --color-primary: #151515;
@@ -6,4 +23,84 @@
   --color-accent: #4ee1a0;
   --color-headings: #ffffff;
   --color-body: #d9d9d9;
+}
+
+/************\
+#Typography
+\************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  background-color: var(--color-primary);
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -1.14px;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  letter-spacing: -1px;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 2.29px;
+  line-height: 2.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  h1 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    letter-spacing: -2.05px;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    letter-spacing: -1.5px;
+    line-height: 5.6rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 8.8rem;
+    letter-spacing: -2.5px;
+    line-height: 8.8rem;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.5px;
+  }
 }
