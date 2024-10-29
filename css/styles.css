@@ -181,3 +181,24 @@ a {
     margin-bottom: 14px;
   }
 }
+
+/************\
+#Icons
+\************/
+
+.icon--container {
+  width: 192px;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.icon {
+  fill: var(--color-headings);
+  width: 24px;
+  height: 24px;
+  transition: fill .3s;
+}
+
+.icon--active:hover {
+  fill: var(--color-accent);
+}
