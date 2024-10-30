@@ -195,6 +195,7 @@ a {
   width: 24px;
   height: 24px;
   transition: fill .3s;
+  margin-bottom: -5.5px;
 }
 
 .icon--active:hover {
@@ -241,4 +242,71 @@ a {
 .project__links {
   display: flex;
   gap: 3rem;
+}
+
+/************\
+#Nav
+\************/
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.nav__logo {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--color-headings);
+  line-height: 3.2rem;
+  letter-spacing: -0.33px;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+    height: 3.2rem;
+  }
+
+  .nav__logo {
+    margin: 0;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 3.2;
+    letter-spacing: -0.44px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .nav__logo {
+
+    width: 172px;
+    height: 3.2rem;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 165px;
+    margin-top: 3.9rem;
+  }
+
+  .icon--container {
+    margin-top: 4.3rem;
+    margin-right: 165px;
+  }
 }
